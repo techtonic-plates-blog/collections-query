@@ -1,0 +1,13 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Containerfile.dev
+  
+    env_file:
+      - .dev.env
+    networks:
+      - techtonic_plates_network
+networks:
+  techtonic_plates_network:
+    external: true
