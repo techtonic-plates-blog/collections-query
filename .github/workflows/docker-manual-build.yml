@@ -11,7 +11,7 @@ on:
         default: 'collections-query'
         type: choice
         options:
-          - collections-service
+          - collections-query
           - entities
           - all
       tag:
